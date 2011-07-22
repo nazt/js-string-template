@@ -11,12 +11,10 @@ var string_template = function (template, replace) {
                 if (replace.hasOwnProperty(i)) {
                     if (typeof parseInt(i, 10) === "number") {
                         replace_filtered[i] = replace[i];
-                        console.log(i, replace[i]);
                         length += 1;
                     }
                 }
             }
-            console.log(replace_filtered, length, replace_filtered.length);
             return replace_filtered;
         })();
     }
